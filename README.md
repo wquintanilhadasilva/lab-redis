@@ -3,8 +3,12 @@ Estudos sobre REDIS
 
 # REDIS docker
 
-[install RDM Redis Desktop Manager on ubuntu](https://snapcraft.io/install/redis-desktop-manager/ubuntu)
-[docker Redis](https://hub.docker.com/_/redis)
+## Server and Tools
+* [install RDM Redis Desktop Manager on ubuntu](https://snapcraft.io/install/redis-desktop-manager/ubuntu)
+* [docker Redis](https://hub.docker.com/_/redis)
+
+
+## Commands
 
 ```
 docker run --name teste-redis -d -p 6379:6379 -i -t redis
