@@ -28,3 +28,10 @@ docker run -v ~/dev/database/redis/conf:/usr/local/etc/redis --name teste-redis 
 ```
 
 #Where ~/dev/database/redis/conf is a local directory containing your redis.conf file. Using this method means that there is no need for you to have a Dockerfile for your redis container.
+
+## Resources
+
+### Messaging
+
+* [Sistema de messageria](https://spring.io/guides/gs/messaging-redis/)
+* [Spring Data Redis](https://www.baeldung.com/spring-data-redis-tutorial)
