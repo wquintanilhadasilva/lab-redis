@@ -49,5 +49,10 @@ public class Student implements Serializable{
 	public void setGrade(int grade) {
 		this.grade = grade;
 	}
+	
+	@Override
+	public String toString() {
+		return "Student: { id: " + this.id + ", name: " + this.name + ", gender: " + this.gender + ", grade: " + this.grade + "}";
+	}
 
 }
