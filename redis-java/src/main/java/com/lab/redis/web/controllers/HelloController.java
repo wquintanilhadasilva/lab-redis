@@ -24,7 +24,7 @@ public class HelloController {
 		this.onAddAlltudent();
 		this.onGetStudent();
 		this.onUpdateStudent();
-		this.onRemoveStudent();
+//		this.onRemoveStudent();
 		this.onAddAlltudent();
 		
 		return "Laboratório de REDIS no ar!\n!";

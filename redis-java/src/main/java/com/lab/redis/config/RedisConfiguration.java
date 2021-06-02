@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
+//import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+//import org.springframework.security.core.context.SecurityContextHolder;
+//import org.springframework.security.task.DelegatingSecurityContextAsyncTaskExecutor;
 
 @Configuration
 public class RedisConfiguration {
@@ -25,5 +28,15 @@ public class RedisConfiguration {
 	    template.setConnectionFactory(jedisConnectionFactory());
 	    return template;
 	}
+
+	/*
+	 * @Bean public DelegatingSecurityContextAsyncTaskExecutor
+	 * taskExecutor(ThreadPoolTaskExecutor delegate) { return new
+	 * DelegatingSecurityContextAsyncTaskExecutor(delegate); }
+	 * 
+	 * public void SpringAsyncConfig() {
+	 * SecurityContextHolder.setStrategyName(SecurityContextHolder.
+	 * MODE_INHERITABLETHREADLOCAL); }
+	 */
 
 }
